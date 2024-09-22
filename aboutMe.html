@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+        <link rel="stylesheet" type="text/css" href=".css">
+    </head>
+
+    <body>
+        <ul>
+            <li><a href="temp.html">Home</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        <header>
+            <h1>Welcome to my life</h1>
+        </header>
+
+        <p>Hello I am the one. The provided image below is me</p>
+
+        <img src="food.png" style="width:80px;">
+        <br>
+        <video id="myvid" controls poster="john.png" id="myvid"width="300" height="300"  preload="auto" >
+            <source src="on_record.mp4" type="video/mp4">
+            <source src="on_record.ogv" type="video/mp4">
+        </video>
+        <br>
+        <button onclick="PlayPause()">Play/Pause</button>
+        <button onclick="restart()">Restart</button>
+
+        <script>
+            var mybtn = document.getElementById("myvid")
+            function PlayPause(){
+
+                if(mybtn.paused)
+                    mybtn.play();
+                else
+                    mybtn.pause();
+            
+            }
+        </script>
+        <script>
+           function restart(){
+            var vid = document.getElementById('myvid')
+            vid.currentTime = 0
+
+           }
+        </script>
+        
+        
+        <article>
+            <aside>
+                <p>Current conversion rate of bitcoin in CAD is 60000 CAD</p>
+            </aside>
+            <h3>Article about Cryptocurrency</h3>
+            <p> This article is targeting bitcoin</p>
+            <section>
+                <h3>Introduction</h3>
+                <p> This is about mining of the bitcoin which was invented in Oct 2008</p>
+            </section>
+           
+        </article>
+        <footer>
+            <p>copyright</p>
+        </footer>
+    </body>
+</html>
