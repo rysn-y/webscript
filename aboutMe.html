@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> <!--Inital setup for page including imported font-->
+        <title>Aboutme</title>  <!--viewports and reference css style sheet-->
+        <link rel="stylesheet" type="text/css" href="about.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        
+    </head>
+    <header>
+            <h1 id="menu"> <!--navigation menu-->
+            <a href="contact.html">Contact</a>
+            <a id="heading">About <Menu></Menu></a>
+            <a href="projects.html">Projects</a>
+            <a href="home.html">Home</a>
+            </h1>
+    
+    </header>
+    <body>
+
+        
+        
+        <header>
+            <h1>Welcome to my Page</h1>
+        </header>
+
+        <p>Hello I am Ryan and I currently study at Ontario Tech University</p>
+
+        <img src="IMG_3224.png" style="width:130px; border-radius: 15px;">
+        <br>
+        <video id="myvid" controls poster="lifee.png" id="myvid"width="300" height="200px"  preload="auto">
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogv" type="video/mp4">
+        </video>
+        <br>
+        <button onclick="PlayPause()">Play/Pause</button>
+        <button onclick="restart()">Restart</button>
+
+        <script>
+            var mybtn = document.getElementById("myvid")
+            function PlayPause(){
+
+                if(mybtn.paused)
+                    mybtn.play();
+                else
+                    mybtn.pause();
+            
+            }
+        </script>
+        <script>
+           function restart(){
+            var vid = document.getElementById('myvid')
+            vid.currentTime = 0
+
+           }
+        </script>
+        
+        
+    
+        <footer>
+            <p>©2024 by Rysn YEE</p>
+        </footer>
+    </body>
+</html>
