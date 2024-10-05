@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> <!--Inital setup for page including imported font-->
+        <title>Contact</title>    <!--viewports and reference css style sheet-->
+        <link rel="stylesheet" type="text/css" href="contactstyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+       
+     </head>
+     <header>
+        <h1 id="menu"> <!--navigation menu-->
+            <a id="heading">Contact</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="home.html">Home</a>
+        </h1>
+    </header>
+    <body>
+
+
+        
+        <div class="container"> <!--message submission form-->
+            <form >
+                <!--name label and text field-->
+                <label for="name">Name</label>
+                <br>
+                <input type="text" id="name" required>
+                <br><br>
+
+                <!--email label and text field-->
+                <label for="mail">Email</label>                 <!--"pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"-->
+                <br>                                            <!--pattern requirement obtaine from "https://www.w3schools.com/tags/att_input_pattern.asp"-->
+                <input type="email" id="mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter valid email address">
+                <br><br>
+
+                <!--message label and text field-->
+                <label id="message" for="msg" required>Message</label>
+                <br>
+                <textarea id="msg" required></textarea>
+                
+                <!--submit form button-->
+                <button >Submit</button>
+            </form>
+        </div>
+        
+        <footer style="text-align: center;">
+            <p ;>©2024 by Rysn YEE</p>
+
+            
+        </footer>
+    </body>
+</html>

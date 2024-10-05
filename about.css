@@ -1,0 +1,56 @@
+body {
+    min-height: 100vh;
+    text-align: center;
+    background: linear-gradient(to bottom, cyan, #8f67ec); 
+    font-family: "Nunito", Calibri;
+}
+
+
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+#menu a {
+    margin: 20px;
+    text-decoration: none;
+    font-size: 30px; 
+}
+button{
+    font-family: "Nunito";
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 126);
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+/* For screens < 768px */
+@media (max-width: 768px) {
+    
+    #menu a {
+        font-size: 16px;
+    }
+
+    
+}
+/* For screens < 480px */
+
+@media (max-width: 480px) {
+
+    #menu{
+        flex-direction: row; /*keep nav menu horizontal*/
+    }
+    #menu a {
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+

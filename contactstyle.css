@@ -1,0 +1,96 @@
+body {
+    min-height: 100vh; /* Ensure full viewport height */
+    padding: 10px;
+    font-family: "Nunito", Calibri;
+    background: linear-gradient(to bottom, cyan, #8f67ec);
+}
+
+.container { /*form box*/
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    background-color: #8f67ec;
+    border-radius: 15px;
+}
+
+label { 
+    font-size: larger;
+}
+
+input { /*txt box for  name and email*/
+    font-family: 'Nunito';
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 15px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#msg { /*text box for message*/
+    font-family: 'Nunito';
+    font-weight: 700;
+    width: 90%; 
+    height: 200px; 
+    padding: 10px;
+    border-radius: 15px;
+}
+
+button { /*submit form button*/
+    font-family: "Nunito";
+    font-size: large;
+    font-weight: bold;
+    background-color: #30CDF9;
+    border-radius: 15px;
+    padding: 8px 30px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #FF5F1F;
+}
+
+/*top navigation*/
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+#menu a {
+    margin: 20px;
+    text-decoration: none;
+    font-size: 30px; /* font size for readability */
+}
+
+
+
+/* For screens < 768px */
+@media (max-width: 768px) {
+
+    textarea, input {
+        width: 260px; /* input width for tablets */
+    }
+
+    button {
+        padding: 6px 20px;
+    }
+}
+
+/* For screens < 480px */
+@media (max-width: 480px) {
+    #menu a {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    textarea, input {
+        width: 240px; /* Width for smaller device*/
+    }
+
+    button {
+        padding: 5px 15px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
